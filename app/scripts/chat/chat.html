@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-lg-9">
+    <h3 class="no-margin">Chat</h3>
+  </div>
+  <div class="col-lg-3">
+    <button class="btn btn-primary" ng-click="chat.createRoom()" >Create a Room</button>
+  </div>
+</div>
+<div class="row"><div class="col-lg-12">&nbsp;</div></div>
+<div class="row">
+  <div class="col-lg-12">
+    <p>Choose a Room to enter and start chatting</p>
+  </div>
+</div>
+<div class="row">
+
+  <div class="col-lg-4" style="padding-top: 15px; padding-bottom: 15px; " ng-repeat="room in chat.rooms">
+    <button class="btn btn-lg btn-default btn-block" ng-click="chat.enterRoom(room.name)">{{room.name}}</button>
+  </div>
+
+</div>
+
+<div class="row"><div class="col-lg-12">&nbsp;</div></div>
+
+
+
+
+
